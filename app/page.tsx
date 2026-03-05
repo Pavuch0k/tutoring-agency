@@ -250,20 +250,23 @@ export default function TutoringAgency() {
       <section
         className="pt-34 pb-16 bg-gradient-to-br from-amber-50 via-white to-orange-50 relative lg:pt-[136px] pt-[110px]"
       >
-        {/* Анимированная обезьяна в Hero секции */}
+        {/* Анимированная обезьяна в Hero секции (локальная гифка из /public) */}
         <AnimatedSection animation="fadeLeft" delay={400} duration={1400}>
-          <div className="absolute top-1/2 transform -translate-y-1/2 z-10 hidden lg:block" style={{ right: "70px", marginTop: "300px" }}>
+          <div
+            className="absolute top-1/2 transform -translate-y-1/2 z-10 hidden lg:block"
+            style={{ right: "70px", marginTop: "300px" }}
+          >
             <img
-              src="https://assets.dochipo.com/editor/animations/monkey/3a37d09c-8eb7-41d0-a8af-a2f98c5e099b.gif"
-              alt="Анимированная обезьяна"
+              src="/monkey-hero.gif"
+              alt=""
               className="object-contain"
-              style={{ 
-                width: "280px", 
-                height: "280px", 
-                maxWidth: "280px", 
+              style={{
+                width: "280px",
+                height: "280px",
+                maxWidth: "280px",
                 maxHeight: "280px",
                 objectFit: "contain",
-                flexShrink: 0
+                flexShrink: 0,
               }}
             />
           </div>
@@ -497,12 +500,12 @@ export default function TutoringAgency() {
 
       {/* How We Work */}
       <section className="py-16 bg-gray-50 relative lg:mt-[50px] mt-0">
-        {/* Вторая анимированная обезьяна в блоке Как мы работаем */}
+        {/* Вторая анимированная обезьяна в блоке Как мы работаем (локальная гифка из /public) */}
         <AnimatedSection animation="fadeRight" delay={400} duration={1400}>
           <div className="absolute top-1/2 transform -translate-y-1/2 z-10 hidden lg:block" style={{ left: "70px", marginTop: "300px" }}>
             <img
-              src="https://assets.dochipo.com/editor/animations/monkey/428e707a-a8b4-4526-a1b5-861ba9abcdd2.gif"
-              alt="Анимированная обезьяна"
+              src="/monkey-how.gif"
+              alt=""
               className="w-70 h-70"
               style={{ width: "280px", height: "280px" }}
             />
@@ -708,12 +711,12 @@ export default function TutoringAgency() {
 
       {/* Results Section */}
       <section id="results" className="py-16 bg-gray-50 relative">
-        {/* Третья анимированная обезьяна в блоке Что говорят родители */}
+        {/* Третья анимированная обезьяна в блоке Что говорят родители (локальная гифка из /public) */}
         <AnimatedSection animation="fadeLeft" delay={400} duration={1400}>
           <div className="absolute top-1/2 transform -translate-y-1/2 z-10 hidden lg:block" style={{ right: "70px", marginTop: "280px" }}>
             <img
-              src="https://assets.dochipo.com/editor/animations/monkey/9d3dbb3d-2afd-481f-9088-bac6bf3d6c4d.gif"
-              alt="Анимированная обезьяна"
+              src="/monkey-results.gif"
+              alt=""
               className="w-70 h-70"
               style={{ width: "280px", height: "280px" }}
             />
@@ -816,12 +819,12 @@ export default function TutoringAgency() {
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50 relative">
-        {/* Четвертая анимированная обезьяна в блоке FAQ */}
+        {/* Четвертая анимированная обезьяна в блоке FAQ (локальная гифка из /public) */}
         <AnimatedSection animation="fadeRight" delay={400} duration={1400}>
           <div className="absolute top-1/2 transform -translate-y-1/2 z-10 hidden lg:block" style={{ left: "70px", marginTop: "200px" }}>
             <img
-              src="https://assets.dochipo.com/editor/animations/monkey/11b900ca-ac21-471f-a54a-0e331c302a93.gif"
-              alt="Анимированная обезьяна"
+              src="/monkey-faq.gif"
+              alt=""
               className="w-70 h-70"
               style={{ width: "280px", height: "280px" }}
             />
@@ -1022,7 +1025,7 @@ export default function TutoringAgency() {
             </div>
 
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-              <p>&copy; 2025 Твой Учитель. Все права защищены.</p>
+              <p>&copy; 2025-2026 Твой Учитель. Все права защищены.</p>
             </div>
           </div>
         </footer>

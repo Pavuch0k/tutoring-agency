@@ -32,6 +32,18 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.WIDGET_CONFIG = {
+                projectId: '5',
+                apiUrl: 'https://ai.devorb.ru/projects/5'
+              };
+            `,
+          }}
+        />
+        <link rel="stylesheet" href="https://ai.devorb.ru/projects/5/widget.css" />
+        <script src="https://ai.devorb.ru/projects/5/widget.js" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
